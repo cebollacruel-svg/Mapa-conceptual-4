@@ -1,111 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Conceptual: Diseño de Investigación Cuantitativa</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Conceptual - Enfoques y Diseños de Investigación Social</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .tree {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      padding-top: 20px; 
+      position: relative;
+      display: table;
+      margin: 0 auto;
+    }
+
+    ul::before {
+      content: '';
+      position: absolute; 
+      top: 0; 
+      left: 50%; 
+      border-left: 2px solid #333;
+      height: 20px;
+    }
+
+    li {
+      display: table-cell;
+      vertical-align: top;
+      padding: 20px 10px 0 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    li::before, li::after {
+      content: '';
+      position: absolute; 
+      top: 0; 
+      border-top: 2px solid #333;
+      width: 50%; 
+      height: 20px;
+    }
+
+    li::before { right: 50%; }
+    li::after { left: 50%; border-left: none; }
+
+    li:only-child::before, li:only-child::after {
+      content: none;
+    }
+
+    li:only-child {
+      padding-top: 0;
+    }
+
+    li:first-child::before, li:last-child::after {
+      border: none;
+    }
+
+    .box {
+      display: inline-block;
+      border: 2px solid #2c3e50;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background: #ecf0f1;
+      font-weight: bold;
+      min-width: 180px;
+    }
+
+    .sub {
+      font-weight: normal;
+      font-size: 14px;
+      border-style: dashed;
+    }
+
+    /* 🎨 Colores por categorías */
+    .enfoques { background: #eaf7ff; border-color: #2980b9; }
+    .enfoques .sub { background: #f0faff; border-color: #2980b9; }
+
+    .disenos { background: #e9fce9; border-color: #27ae60; }
+    .disenos .sub { background: #f3fff3; border-color: #27ae60; }
+
+    .elementos { background: #fff4e6; border-color: #e67e22; }
+    .elementos .sub { background: #fffaf5; border-color: #e67e22; }
+
+    .principal { background: #fef9e7; border-color: #f39c12; }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Mapa Conceptual: Diseño de Investigación Cuantitativa</h1>
-    </header>
+  <h1>Mapa Conceptual: Enfoques y Diseños de Investigación Social</h1>
 
-    <div class="tree-container">
-        <ul class="tree">
-            <li>
-                <div class="node root-node">
-                    <strong>Diseño de Investigación Cuantitativa</strong>
-                    <span>Etapa crucial que define la estructura de la investigación antes del trabajo de campo.</span>
-                </div>
-
-                <ul>
-                    <li>
-                        <div class="node primary-node">
-                            <strong>1. Características Generales</strong>
-                        </div>
-                        <ul>
-                            <li><div class="node secondary-node"><strong>Teórico</strong>: Se basa en la teoría.</div></li>
-                            <li><div class="node secondary-node"><strong>Hipotético-Deductivo</strong>: Sigue el método científico.</div></li>
-                            <li><div class="node secondary-node"><strong>Estructurado y Previo</strong>: Se elabora antes del trabajo de campo y admite pocos cambios.</div></li>
-                            <li><div class="node secondary-node"><strong>Generalizable</strong>: Busca conocimiento técnico para generalizarlo.</div></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <div class="node primary-node">
-                           <strong>2. Aspectos Determinantes</strong>
-                           <span>Cuatro elementos interdependientes con determinismo recíproco.</span>
-                        </div>
-                        <ul>
-                            <li><div class="node secondary-node">Interés cognitivo técnico del investigador.</div></li>
-                            <li><div class="node secondary-node">Concepción del objeto de estudio.</div></li>
-                            <li><div class="node secondary-node">Problema de investigación.</div></li>
-                            <li><div class="node secondary-node">Enfoque cuantitativo.</div></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <div class="node primary-node">
-                            <strong>3. Componente 1: Elaboración del Problema</strong>
-                        </div>
-                        <ul>
-                            <li>
-                                <div class="node secondary-node"><strong>A. Fase Preliminar</strong></div>
-                                <ul>
-                                    <li><div class="node tertiary-node"><strong>Planteamiento Inicial</strong>: Se parte de ideas vagas sobre un hecho social.</div></li>
-                                    <li><div class="node tertiary-node"><strong>Estado de la Cuestión</strong>: Se analizan investigaciones existentes para encontrar vacíos.</div></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="node secondary-node"><strong>B. Fase de Concreción</strong></div>
-                                <ul>
-                                    <li><div class="node tertiary-node"><strong>Antecedentes</strong>: Describen tendencias y aseguran que el trabajo sea inédito.</div></li>
-                                    <li><div class="node tertiary-node"><strong>Justificación</strong>: Argumentos sobre la utilidad de la investigación.</div></li>
-                                    <li><div class="node tertiary-node"><strong>Reformulación del Problema</strong>: Se verbaliza en forma de preguntas concretas.</div></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <div class="node primary-node">
-                           <strong>4. Componente 2: Elaboración del Contexto</strong>
-                        </div>
-                        <ul>
-                            <li><div class="node secondary-node"><strong>A. Contexto Temporal</strong> (Transversal o Longitudinal)</div></li>
-                            <li><div class="node secondary-node"><strong>B. Contexto Espacial</strong> (Artificial o De Campo)</div></li>
-                            <li><div class="node secondary-node"><strong>C. Contexto Teórico (Marco Teórico)</strong>: Explica la relación entre variables.</div></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <div class="node primary-node">
-                            <strong>5. Componente 3: Elaboración del Propósito</strong>
-                        </div>
-                        <ul>
-                            <li>
-                                <div class="node secondary-node"><strong>A. Hipótesis de Investigación</strong>: Proposiciones a ser verificadas que orientan la investigación.</div>
-                                <ul>
-                                     <li><div class="node tertiary-node"><strong>Tipos</strong>: Explicativas, Asociativas, Conceptuales, Nulas, etc.</div></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="node secondary-node"><strong>B. Objetivos de Investigación</strong>: Definen los conocimientos a alcanzar.</div>
-                                 <ul>
-                                     <li><div class="node tertiary-node"><strong>General y Específicos</strong>: Relacionados con las preguntas de la investigación.</div></li>
-                                 </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
+  <div class="tree">
+    <ul>
+      <li>
+        <div class="box principal">ENFOQUES Y DISEÑOS DE INVESTIGACIÓN SOCIAL</div>
+        <ul>
+          <li>
+            <div class="box enfoques">ENFOQUES</div>
+            <ul>
+              <li><div class="box sub enfoques">Cuantitativo: medición, estadística, generalización</div></li>
+              <li><div class="box sub enfoques">Cualitativo: comprensión, contexto, significados</div></li>
+            </ul>
+          </li>
+          <li>
+            <div class="box disenos">DISEÑOS</div>
+            <ul>
+              <li><div class="box sub disenos">Experimental: control de variables, manipulación, comparación</div></li>
+              <li><div class="box sub disenos">No Experimental: descriptivos, correlacionales, exploratorios</div></li>
+            </ul>
+          </li>
+          <li>
+            <div class="box elementos">ELEMENTOS CLAVE</div>
+            <ul>
+              <li><div class="box sub elementos">Problema de estudio</div></li>
+              <li><div class="box sub elementos">Hipótesis</div></li>
+              <li><div class="box sub elementos">Objetivos</div></li>
+              <li><div class="box sub elementos">Variables e indicadores</div></li>
+              <li><div class="box sub elementos">Población y muestra</div></li>
+              <li><div class="box sub elementos">Técnicas de análisis</div></li>
+            </ul>
+          </li>
         </ul>
-    </div>
+      </li>
+    </ul>
+  </div>
 
 </body>
 </html>
